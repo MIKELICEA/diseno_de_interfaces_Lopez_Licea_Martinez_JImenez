@@ -1,0 +1,12 @@
+<app-header></app-header> <!-- Incluye el componente del encabezado -->
+
+<div class="course-listing">
+  <h1>Listado de cursos</h1>
+  <div class="search-and-add">
+    <app-search-bar></app-search-bar> <!-- Componente de barra de búsqueda -->
+    <app-custom-button>Agregar Curso</app-custom-button> <!-- Botón para agregar cursos -->
+  </div>
+  <div class="courses-grid">
+    <app-card-curso *ngFor="let curso of cursos" [curso]="curso"></app-card-curso>
+  </div>
+</div>

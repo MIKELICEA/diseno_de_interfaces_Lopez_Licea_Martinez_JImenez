@@ -1,0 +1,55 @@
+.alumnos-listing {
+    max-width: 1200px; // Ampliamos el ancho para incluir los gráficos
+    margin: auto;
+    padding: 20px;
+  
+    h1 {
+      color: #014B98;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 47.66px;
+      margin-bottom: 20px;
+    }
+  
+    .metrics {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px; // Espacio entre métricas y gráficos
+    }
+  
+    .info-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; // Espacio vertical entre filas de métricas
+    }
+  
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px; // Espacio horizontal entre el botón y el número
+    }
+  
+    .charts-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px; // Espacio entre métricas y gráficos
+  
+      .chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%; // Los gráficos ocupan la mitad del contenedor
+        text-align: center;
+  
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #000; // Negro para el texto del título
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,27 @@
+.lista-alumnos {
+    width: 406px;
+    background-color: #014B98;
+    border-radius: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+  
+    .alumno-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      label {
+        color: #FFFFFF; // Texto blanco para contraste con el fondo
+        margin-left: 10px;
+      }
+  
+      input[type="checkbox"] {
+        accent-color: #00B2E3; // Color de la checkbox
+      }
+    }
+  
+    .alumno-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

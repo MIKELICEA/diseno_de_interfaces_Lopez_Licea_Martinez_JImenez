@@ -1,0 +1,68 @@
+.card-container {
+    width: 400px;
+    height: auto; /* Ajusta el alto dinámicamente según el contenido */
+    background-color: #00B2E3; /* Color azul claro */
+    border-radius: 25px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column; /* Disposición vertical */
+    align-items: center; /* Centrado horizontal */
+    justify-content: flex-start; /* Alineación vertical hacia arriba */
+    padding: 20px;
+    box-sizing: border-box;
+  
+    h2 {
+      font-size: 24px; /* Tamaño grande del título */
+      color: white; /* Texto blanco */
+      margin-bottom: 20px; /* Espacio entre el título y el botón */
+    }
+  
+    .boton-lista {
+      width: 100%; /* El botón ocupa todo el ancho disponible */
+  
+      button {
+        width: 100%; /* Botón ocupa el ancho completo */
+        height: 50px;
+        background-color: #004A98; /* Color azul oscuro */
+        color: white; /* Texto blanco */
+        border: none;
+        border-radius: 25px; /* Bordes redondeados */
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between; /* Separación entre texto y flecha */
+        align-items: center;
+        padding: 0 20px;
+  
+        span {
+          font-size: 18px; /* Flecha del mismo tamaño que el texto */
+        }
+  
+        &:hover {
+          background-color: #003366; /* Cambio de color al pasar el mouse */
+        }
+      }
+  
+      .dropdown-content {
+        width: 100%; /* Ocupa el mismo ancho que el botón */
+        max-height: 200px; /* Altura máxima para la lista */
+        overflow-y: auto; /* Habilita el scroll si excede el máximo */
+        background-color: #f9f9f9; /* Fondo blanco */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-top: 5px; /* Espacio entre el botón y la lista */
+        padding: 10px;
+        z-index: 1;
+  
+        .alumno-item {
+          padding: 5px 0; /* Espacio entre elementos */
+          color: #333; /* Texto negro */
+          border-bottom: 1px solid #ddd; /* Línea divisoria entre alumnos */
+  
+          &:last-child {
+            border-bottom: none; /* Elimina la línea para el último elemento */
+          }
+        }
+      }
+    }
+  }
+  

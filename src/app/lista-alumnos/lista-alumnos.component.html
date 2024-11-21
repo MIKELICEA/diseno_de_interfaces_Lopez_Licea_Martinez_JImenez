@@ -1,0 +1,7 @@
+<div class="lista-alumnos">
+    <div *ngFor="let alumno of alumnos" class="alumno-item">
+      <input type="checkbox" id="{{ alumno.id }}" [(ngModel)]="alumno.selected">
+      <label for="{{ alumno.id }}">{{ alumno.nombre }}</label>
+    </div>
+  </div>
+  

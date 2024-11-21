@@ -1,0 +1,29 @@
+.card-curso {
+    width: 340px;
+    height: 307px;
+    border: 7px solid #00B2E3; // Borde azul con grosor de 7px
+    border-radius: 25px; // Radio de borde aumentado a 25px
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #FFFFFF; // Fondo blanco especificado
+
+    img {
+        width: 140px; // Ajusta según el tamaño deseado
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .curso-info {
+        text-align: center;
+        color: #000000; // Aplica color negro a todo el texto
+
+        h3, p {
+            margin: 5px 0; // Ajuste uniforme del margen
+            font-size: 16px; // Tamaño de fuente unificado para h3 y p
+        }
+    }
+}

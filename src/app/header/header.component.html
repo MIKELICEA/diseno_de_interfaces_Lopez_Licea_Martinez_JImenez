@@ -1,0 +1,14 @@
+<header class="dashboard-header">
+    <div class="header-content">
+      <h1>DASHBOARD</h1>
+      <nav class="header-nav">
+        <ul>
+          <li><button (click)="navigate('/dashboard-cursos')">Cursos</button></li>
+          <li><button (click)="navigate('/dashboard-alumnos')">Alumnos</button></li>
+          <li><button (click)="navigate('calendar')">Calendario</button></li>
+        </ul>
+      </nav>
+      <button class="logout-button" (click)="logout()">Cerrar Sesión</button>
+    </div>
+  </header>
+  

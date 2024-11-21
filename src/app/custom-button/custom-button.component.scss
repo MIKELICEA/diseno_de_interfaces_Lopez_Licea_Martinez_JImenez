@@ -1,0 +1,15 @@
+.custom-button {
+    width: 254px; // Ancho fijo para el botón
+    height: 51px; // Altura fija
+    background-color: #2080CB; // Color de fondo azul
+    color: white; // Texto blanco
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; // Texto en mayúsculas
+    font-weight: bold; // Texto en negrita
+}

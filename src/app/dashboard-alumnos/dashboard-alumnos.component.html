@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="alumnos-listing">
+  <h1>Alumnos</h1>
+  <div class="metrics">
+    <app-lista-alumnos></app-lista-alumnos>
+    <div class="info-metrics">
+      <div class="metric-row">
+        <app-boton-lista [title]="'Promedio'"></app-boton-lista>
+        <app-numero [numero]="9.8"></app-numero>
+      </div>
+      <div class="metric-row">
+        <app-boton-lista [title]="'Asistencia'"></app-boton-lista>
+        <app-numero [numero]="65"></app-numero>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts-container">
+    <div class="chart">
+      <h2>Histograma</h2>
+      <app-histograma></app-histograma>
+    </div>
+    <div class="chart">
+      <h2>Gráfica Pastel</h2>
+      <app-grafica-pastel></app-grafica-pastel>
+    </div>
+  </div>
+</div>

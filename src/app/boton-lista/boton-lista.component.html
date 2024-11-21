@@ -1,0 +1,14 @@
+<div class="card-container">
+    <h2>{{ title }}</h2> <!-- El título ahora se recibe como entrada -->
+    <div class="boton-lista">
+      <button (click)="toggleDropdown()">Ver {{ title }} <span>&#9660;</span></button>
+      <div *ngIf="dropdownOpen" class="dropdown-content">
+        <ng-container *ngFor="let alumno of alumnos">
+          <div class="alumno-item">
+            {{ alumno.nombre }}: {{ alumno.calificacion }}%
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  

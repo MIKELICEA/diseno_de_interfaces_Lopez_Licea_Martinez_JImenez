@@ -1,0 +1,50 @@
+.course-listing {
+    max-width: 960px; // Ancho máximo del contenedor principal
+    margin: auto; // Centra el contenedor principal en la página
+    padding: 20px;
+  
+    h1 {
+      color: #014B98; // Color azul para el título
+      font-family: 'Open Sans', sans-serif; // Asegura que la fuente Open Sans esté aplicada
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 47.66px;
+      margin-bottom: 20px;
+      margin-left: auto; // Centra el título horizontalmente
+      margin-right: auto; // Centra el título horizontalmente
+    }
+  
+    .search-and-add {
+      display: flex;
+      justify-content: center; // Centra la barra de búsqueda y el botón
+      margin-bottom: 20px;
+  
+      app-search-bar {
+        margin-right: 20px; // Espacio entre la barra de búsqueda y el botón
+      }
+    }
+  
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // Tres columnas para las tarjetas
+      gap: 20px;
+      justify-content: center; // Centra las tarjetas en el grid
+      justify-items: center; // Asegura que cada tarjeta esté centrada en su celda del grid
+    }
+  }
+  
+  .dashboard-header .header-nav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover, &.active {
+      background-color: #00B2E3; // Color azul para el botón activo
+    }
+  }
+  
